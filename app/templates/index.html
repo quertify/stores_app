@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores</title>
+</head>
+<body>
+    <h1>Stores List</h1>
+    <ul>
+        {% for store in stores %}
+            <li>
+                {{ store.name }}  {{ store.postcode }} - Latitude: {{ store.latitude }}, Longitude: {{ store.longitude }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
